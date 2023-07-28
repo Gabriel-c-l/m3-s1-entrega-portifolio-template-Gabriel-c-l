@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body{
+    background-color: rgba(0, 0, 0, 0.92);
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    width: 75vw;
+    padding: 0rem 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageTitle {
+   font-size: 1rem;
+}
+
+.headerRedirect{
+    display: flex;
+    gap: 2.25rem;
+}
+
+.redirect {
+    color: rgba(255, 255, 255, 0.806);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    font-size: 0.825rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+.redirect:hover {
+    color: white;
+    border-bottom: 1px solid;
+}
+
+.button {
+    font-size: 0.825rem;
+    border-radius: 0.6rem;
+    border: 1px #6880FF;
+    background-color: #6880FF;
+    padding: 0.5rem 1.5rem;
+    color: white;
+}
+
+.button:hover {
+    border: 1px #7C91FF;
+    background-color: #7C91FF;
+    color: white;
+}
+
+.bannerSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.name {
+    color: #6880FF;
+    font-size: 1rem;
+}
+
+.title, .footerTitle {
+    font-size: 2.4rem;
+}
+
+.text {
+    color: rgba(255, 255, 255, 0.806);
+    font-size: 0.825rem;
+}
+
+.img {
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.list, .projectsList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2rem 1.4rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.647);
+}
+
+.techImg {
+    margin-right: 1.25rem;
+    width: 25px;
+}
+
+.space {
+    margin-top: 4rem;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.647);
+}
+
+.projectDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectButton {
+    color: #7B61FF;
+    padding: 0;
+    border-bottom: 1px solid #7c92ff00;
+    text-decoration: none;
+    background: none;
+    font-size: 0.825rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 4.1rem;
+}
+
+.projectButton:hover {
+    color:#7C91FF;
+    border-bottom: 1px solid #7C91FF;
+}
+
+.gitIcon {
+    width: 30px;
+}
+
+footer {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 2rem;
+}
+
+.footerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerIcon {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 15px;
+}
+
+.footerText {
+    color: rgba(255, 255, 255, 0.806);
+    text-align: center;
+    font-size: 0.825rem;
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+    body {
+     width: 90vw; 
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 60vw; 
+        margin-left: 10rem;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .redirect{
+        margin-top: 2rem;
+    }
+
+    .aboutMeSection{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .aboutMetitle{
+        white-space: nowrap;
+        font-size: 2.4rem;
+    }
+
+    .aboutMeDiv{
+        padding: 0 0 0 9rem;
+    }
+
+    .bannerSection {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .img{
+        width: 300px;
+    }
+
+    .list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card1 {
+        padding: 0.2rem 4rem 0.2rem 1.4rem;
+        
+    }
+
+    .projectsList{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 2rem 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    body {
+        width: 45vw; 
+        margin-left: 25rem;
+        margin-bottom: 3rem;
+    }
+
+    .title{
+        width: 20rem;
+        margin-right: 0rem;
+    }
+
+    .space{
+        margin-top: 10rem;
+    }
+
+    footer {
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        padding: 2rem 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 1441px){
+    body {
+        width: 45vw; 
+        margin-bottom: 3rem;
+    }
+
+    .title{
+        width: 20rem;
+        margin-right: 9rem;
+    }
+
+    .space{
+        margin-top: 10rem;
+    }
+}
